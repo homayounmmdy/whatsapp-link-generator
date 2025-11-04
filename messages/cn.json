@@ -1,0 +1,59 @@
+{
+  "HomePage": {
+    "title": "首页"
+  },
+  "config": {
+    "name": "助手",
+    "pages": {
+      "home": "首页",
+      "technology": "技术",
+      "whatsappLinkGenerator": "WhatsApp链接生成器"
+    }
+  },
+  "Countries": {
+    "afghanistan": "阿富汗",
+    "australia": "澳大利亚",
+    "brazil": "巴西",
+    "canada": "加拿大",
+    "china": "中国",
+    "france": "法国",
+    "germany": "德国",
+    "india": "印度",
+    "iran": "伊朗",
+    "italy": "意大利",
+    "japan": "日本",
+    "mexico": "墨西哥",
+    "russia": "俄罗斯",
+    "saudiArabia": "沙特阿拉伯",
+    "southAfrica": "南非",
+    "southKorea": "韩国",
+    "spain": "西班牙",
+    "turkey": "土耳其",
+    "unitedArabEmirates": "阿拉伯联合酋长国",
+    "unitedKingdom": "英国",
+    "unitedStates": "美国"
+  },
+  "whatsappLinkGenerator": {
+    "title": "瓦次艾普链接生成器",
+    "titr": "即时创建专业的自定义聊天链接",
+    "about_title": "关于瓦次艾普链接生成器",
+    "description": "瓦次艾普要求用户在发送消息前先保存您的电话号码。此工具通过创建即时可用的直接聊天链接来消除这一步骤。",
+    "work_title": "工作原理",
+    "work_des1": "选择您的国家代码",
+    "work_des2": "输入您的电话号码（无需前导零）",
+    "work_des3": "添加可选预填消息",
+    "work_des4": "生成并分享您的个性化链接",
+    "perfect_title": "完美适用于",
+    "perfect_des1": "名片和营销材料",
+    "perfect_des2": "电子邮件签名和社交媒体资料",
+    "perfect_des3": "网站和在线作品集",
+    "perfect_des4": "简化客户沟通",
+    "slog": "瓦次艾普链接生成器是一个优雅的解决方案，专为希望提供直接沟通渠道而无需保存联系人步骤的专业人士设计。",
+    "country": "国家",
+    "phoneNumber": "电话号码",
+    "enterPhoneNumber": "输入电话号码（无需前导零）",
+    "messageOptional": "消息（可选）",
+    "enterPrefilledMessage": "输入预填消息...",
+    "generateLink": "生成链接"
+  }
+}
