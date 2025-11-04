@@ -1,0 +1,60 @@
+{
+  "HomePage": {
+    "title": "Bonjour"
+  },
+  "config": {
+    "name": "Assistant",
+    "pages": {
+      "home": "Accueil",
+      "technology": "Technologie",
+      "whatsappLinkGenerator": "Générateur de Lien WhatsApp"
+    }
+  },
+  "Countries": {
+    "afghanistan": "Afghanistan",
+    "australia": "Australie",
+    "brazil": "Brésil",
+    "canada": "Canada",
+    "china": "Chine",
+    "france": "France",
+    "germany": "Allemagne",
+    "india": "Inde",
+    "iran": "Iran",
+    "italy": "Italie",
+    "japan": "Japon",
+    "mexico": "Mexique",
+    "russia": "Russie",
+    "saudiArabia": "Arabie Saoudite",
+    "southAfrica": "Afrique du Sud",
+    "southKorea": "Corée du Sud",
+    "spain": "Espagne",
+    "turkey": "Turquie",
+    "unitedArabEmirates": "Émirats Arabes Unis",
+    "unitedKingdom": "Royaume-Uni",
+    "unitedStates": "États-Unis"
+  },
+
+  "whatsappLinkGenerator": {
+    "title": "Générateur de Lien WhatsApp",
+    "titr": "Créez instantanément des liens de chat professionnels et personnalisés",
+    "about_title": "À propos du Générateur de Lien WhatsApp",
+    "description": "WhatsApp exige que les utilisateurs enregistrent votre numéro de téléphone avant de pouvoir vous envoyer des messages. Cet outil élimine cette étape en créant des liens de chat directs qui fonctionnent immédiatement.",
+    "work_title": "Comment ça marche",
+    "work_des1": "Sélectionnez votre indicatif pays",
+    "work_des2": "Entrez votre numéro de téléphone sans le zéro initial",
+    "work_des3": "Ajoutez un message pré-rempli optionnel",
+    "work_des4": "Générez et partagez votre lien personnalisé",
+    "perfect_title": "Idéal pour",
+    "perfect_des1": "Cartes de visite et supports marketing",
+    "perfect_des2": "Signatures e-mail et profils réseaux sociaux",
+    "perfect_des3": "Sites web et portfolios en ligne",
+    "perfect_des4": "Simplification de la communication client",
+    "slog": "Le Générateur de Lien WhatsApp est une solution élégante pour les professionnels qui souhaitent offrir un canal de communication direct sans la contrainte de l'enregistrement du contact.",
+    "country": "Pays",
+    "phoneNumber": "Numéro de téléphone",
+    "enterPhoneNumber": "Entrez le numéro de téléphone (sans le zéro initial)",
+    "messageOptional": "Message (optionnel)",
+    "enterPrefilledMessage": "Entrez un message pré-rempli...",
+    "generateLink": "Générer le lien"
+  }
+}
