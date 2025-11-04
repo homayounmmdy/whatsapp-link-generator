@@ -1,13 +1,15 @@
+'use client'
+import { useDirection } from "@/app/hooks/useDirection";
 import { useTranslations } from "next-intl";
 
 const InfoSection = () => {
   const t = useTranslations("whatsappLinkGenerator");
+  const {rtl} = useDirection()
   return (
     <div>
       <h2 className="mb-4 flex items-center text-xl font-bold text-gray-800">
         <svg
-          className="mr-2 h-5 w-5"
-          fill="none"
+          className={`${rtl('ml-2', 'mr-2')} h-5 w-5`} fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"

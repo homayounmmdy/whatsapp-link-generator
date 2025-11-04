@@ -4,6 +4,7 @@ import CountrySelect from "@/components/CountrySelect";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { useDirection } from "../hooks/useDirection";
 import GeneratedLink from "./components/GeneratedLink";
 import InfoSection from "./components/InfoSection";
 import MessageInput from "./components/MessageInput";
@@ -26,6 +27,7 @@ export default function Home() {
   const countries = useGetCountries();
 
   const t = useTranslations("whatsappLinkGenerator");
+  const { rtl } = useDirection();
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 p-2 md:p-4">
       <div className="w-full max-w-6xl overflow-hidden rounded-xl bg-white shadow-xl">
@@ -35,11 +37,15 @@ export default function Home() {
             {t("title")}
           </h1>
           <p className="mt-1 text-center text-sm text-gray-300">{t("titr")}</p>
-          
         </div>
 
         {/* Two-column layout container */}
-        <div className="flex flex-col md:flex-row">
+        <div
+          className={`flex flex-col${rtl(
+            "md:flex-row",
+            "md:flex-row-reverse"
+          )} `}
+        >
           {/* Form Column */}
           <div className="w-full p-6 md:w-1/2 md:p-8">
             <form onSubmit={handleSubmit} className="space-y-5">
