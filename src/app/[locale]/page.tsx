@@ -60,7 +60,7 @@ export default function Home() {
 
               <button
                 type="submit"
-                className="w-full rounded-lg bg-teal-700 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                className="w-full rounded-lg bg-teal-700 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
               >
                 {t("generateLink")}
               </button>

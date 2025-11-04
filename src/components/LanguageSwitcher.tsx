@@ -21,10 +21,10 @@ const LanguageSwitcher = () => {
   const url = pathname.slice(4);
 
   return (
-    <div className="relative bg-teal-700 rounded-xl text-white">
+    <div className="relative rounded-xl bg-teal-700 text-white">
       <button
         onClick={() => setShowLanguageMenu(!showLanguageMenu)}
-        className="mx-3 justify-center flex items-center p-4 w-full transition-colors duration-200 "
+        className="mx-3 flex w-full items-center justify-center gap-2 p-4 transition-colors duration-200"
       >
         <span className="mr-1 font-medium">
           {currentLanguage.toUpperCase()}
@@ -46,7 +46,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {showLanguageMenu && (
-        <div className="absolute mx-auto left-0 right-0 z-10 mt-2 w-36 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute left-0 right-0 z-10 mx-auto mt-2 w-36 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="py-1">
             {LanguagesConfig.map((lang) => (
               <Link
