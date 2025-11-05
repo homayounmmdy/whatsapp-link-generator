@@ -41,7 +41,7 @@ export default function Home() {
 
         {/* Two-column layout container */}
         <div
-          className={`flex flex-col${rtl(
+          className={`flex flex-col ${rtl(
             "md:flex-row",
             "md:flex-row-reverse"
           )} `}
