@@ -9,6 +9,7 @@ import GeneratedLink from "./components/GeneratedLink";
 import InfoSection from "./components/InfoSection";
 import MessageInput from "./components/MessageInput";
 import PhoneNumberInput from "./components/PhoneNumberInput";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   const [countryCode, setCountryCode] = useState("+98");
@@ -28,6 +29,10 @@ export default function Home() {
 
   const t = useTranslations("whatsappLinkGenerator");
   const { rtl } = useDirection();
+
+  const path = usePathname()
+
+  const lang = path.slice(1)
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 p-2 md:p-4">
       <div className="w-full max-w-6xl overflow-hidden rounded-xl bg-white shadow-xl">
@@ -55,7 +60,7 @@ export default function Home() {
                 value={countryCode}
                 onChange={setCountryCode}
               />
-              <PhoneNumberInput value={phoneNumber} onChange={setPhoneNumber} />
+              <PhoneNumberInput value={phoneNumber} onChange={setPhoneNumber} lang={lang}/>
               <MessageInput value={message} onChange={setMessage} />
 
               <button
