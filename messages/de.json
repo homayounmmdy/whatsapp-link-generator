@@ -3,7 +3,7 @@
     "title": "Hallo"
   },
   "config": {
-    "name" : "Helper",
+    "name": "Helper",
     "pages": {
       "home": "Heim",
       "technology": "Technologie",
@@ -37,6 +37,10 @@
   "whatsappLinkGenerator": {
     "title": "WhatsApp Link Generator",
     "titr": "Erstellen Sie sofort professionelle, benutzerdefinierte Chat-Links",
+    "your_whatsapp_link": "Ihr WhatsApp-Link",
+    "copy_link": "Link kopieren",
+    "copied": "Kopiert",
+    "link_copied_to_clipboard": "Link in die Zwischenablage kopiert!",
     "about_title": "Über den WhatsApp-Link-Generator",
     "description": "WhatsApp verlangt von Nutzern, Ihre Telefonnummer zu speichern, bevor sie Ihnen Nachrichten senden können. Dieses Tool eliminiert diesen Schritt, indem es direkte Chat-Links erstellt, die sofort funktionieren.",
     "work_title": "So funktioniert es",

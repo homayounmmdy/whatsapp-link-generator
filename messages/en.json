@@ -3,7 +3,7 @@
     "title": "Hello"
   },
   "config": {
-    "name" : "Helper",
+    "name": "Helper",
     "pages": {
       "home": "Home",
       "technology": "Technology",
@@ -36,6 +36,10 @@
   "whatsappLinkGenerator": {
     "title": "WhatsApp Link Generator",
     "titr": "Create professional custom chat links instantly",
+    "your_whatsapp_link": "Your WhatsApp Link",
+    "copy_link": "Copy Link",
+    "copied": "Copied",
+    "link_copied_to_clipboard" : "Link copied to clipboard!",
     "about_title": "About WhatsApp Link Generator",
     "description": "WhatsApp requires users to save your phone number before messaging you. This tool eliminates that step by creating direct chat links that work instantly.",
     "work_title": "How It Works",

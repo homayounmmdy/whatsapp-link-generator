@@ -37,6 +37,10 @@
   "whatsappLinkGenerator": {
     "title": "Générateur de Lien WhatsApp",
     "titr": "Créez instantanément des liens de chat professionnels et personnalisés",
+    "your_whatsapp_link": "Votre lien WhatsApp",
+    "copy_link": "Copier le lien",
+    "copied": "Copié",
+    "link_copied_to_clipboard": "Lien copié dans le presse-papiers !",
     "about_title": "À propos du Générateur de Lien WhatsApp",
     "description": "WhatsApp exige que les utilisateurs enregistrent votre numéro de téléphone avant de pouvoir vous envoyer des messages. Cet outil élimine cette étape en créant des liens de chat directs qui fonctionnent immédiatement.",
     "work_title": "Comment ça marche",

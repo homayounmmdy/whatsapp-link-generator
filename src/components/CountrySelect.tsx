@@ -11,12 +11,14 @@ interface CountrySelectProps {
   countries: Country[];
   value: string;
   onChange: (value: string) => void;
+  lang : string
 }
 
 export default function CountrySelect({
   countries,
   value,
   onChange,
+  lang
 }: CountrySelectProps) {
   const t = useTranslations("whatsappLinkGenerator");
   const { rtl } = useDirection();
@@ -33,7 +35,7 @@ export default function CountrySelect({
         >
           {countries.map((country) => (
             <option key={country.code} value={country.code}>
-              {country.name} ({toPersianDigits(country.code)})
+              {country.name} ({lang === 'fa' ? toPersianDigits(country.code): country.code})
             </option>
           ))}
         </select>

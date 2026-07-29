@@ -3,14 +3,14 @@ import { useGetCountries } from "@/app/hooks/useGetCountries";
 import CountrySelect from "@/components/CountrySelect";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+import fixRTL from "rtl-text-tools";
 import { useDirection } from "../hooks/useDirection";
 import GeneratedLink from "./components/GeneratedLink";
 import InfoSection from "./components/InfoSection";
 import MessageInput from "./components/MessageInput";
 import PhoneNumberInput from "./components/PhoneNumberInput";
-import { usePathname } from "next/navigation";
-import fixRTL from 'rtl-text-tools';
 
 export default function Home() {
   const [countryCode, setCountryCode] = useState("+98");
@@ -31,9 +31,9 @@ export default function Home() {
   const t = useTranslations("whatsappLinkGenerator");
   const { rtl } = useDirection();
 
-  const path = usePathname()
+  const path = usePathname();
 
-  const lang = path.slice(1)
+  const lang = path.slice(1);
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 p-2 md:p-4">
       <div className="w-full max-w-6xl overflow-hidden rounded-xl bg-white shadow-xl">
@@ -49,7 +49,7 @@ export default function Home() {
         <div
           className={`flex flex-col ${rtl(
             "md:flex-row",
-            "md:flex-row-reverse"
+            "md:flex-row-reverse",
           )} `}
         >
           {/* Form Column */}
@@ -57,12 +57,20 @@ export default function Home() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <LanguageSwitcher />
               <CountrySelect
+                lang={lang}
                 countries={countries}
                 value={countryCode}
                 onChange={setCountryCode}
               />
-              <PhoneNumberInput value={phoneNumber} onChange={setPhoneNumber} lang={lang}/>
-              <MessageInput value={lang === 'fa' ? fixRTL(message, 'persian') : message} onChange={setMessage} />
+              <PhoneNumberInput
+                value={phoneNumber}
+                onChange={setPhoneNumber}
+                lang={lang}
+              />
+              <MessageInput
+                value={lang === "fa" ? fixRTL(message, "persian") : message}
+                onChange={setMessage}
+              />
 
               <button
                 type="submit"
