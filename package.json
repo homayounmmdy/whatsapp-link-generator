@@ -12,7 +12,7 @@
     "framer-motion": "^12.4.7",
     "next": "15.5.22",
     "next-intl": "^3.26.5",
-    "react": "^19.0.0",
+    "react": "^19.2.8",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
     "rtl-text-tools": "^1.2.0"
