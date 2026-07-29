@@ -14,7 +14,7 @@
     "next-intl": "^3.26.5",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-hot-toast": "^2.5.2",
+    "react-hot-toast": "^2.6.0",
     "rtl-text-tools": "^1.2.0"
   },
   "devDependencies": {
