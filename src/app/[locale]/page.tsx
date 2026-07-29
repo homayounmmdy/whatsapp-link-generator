@@ -10,6 +10,7 @@ import InfoSection from "./components/InfoSection";
 import MessageInput from "./components/MessageInput";
 import PhoneNumberInput from "./components/PhoneNumberInput";
 import { usePathname } from "next/navigation";
+import fixRTL from 'rtl-text-tools';
 
 export default function Home() {
   const [countryCode, setCountryCode] = useState("+98");
@@ -61,7 +62,7 @@ export default function Home() {
                 onChange={setCountryCode}
               />
               <PhoneNumberInput value={phoneNumber} onChange={setPhoneNumber} lang={lang}/>
-              <MessageInput value={message} onChange={setMessage} />
+              <MessageInput value={lang === 'fa' ? fixRTL(message, 'persian') : message} onChange={setMessage} />
 
               <button
                 type="submit"

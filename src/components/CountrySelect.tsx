@@ -1,5 +1,6 @@
 import { useDirection } from "@/app/hooks/useDirection";
 import { useTranslations } from "next-intl";
+import { toPersianDigits } from "rtl-text-tools";
 
 interface Country {
   name: string;
@@ -32,14 +33,14 @@ export default function CountrySelect({
         >
           {countries.map((country) => (
             <option key={country.code} value={country.code}>
-              {country.name} ({country.code})
+              {country.name} ({toPersianDigits(country.code)})
             </option>
           ))}
         </select>
         <div
           className={`${rtl(
             "left-0",
-            "right-0"
+            "right-0",
           )} pointer-events-none absolute inset-y-0  flex items-center px-3 text-gray-500`}
         >
           <svg
